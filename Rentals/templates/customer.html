@@ -1,0 +1,9 @@
+<h1><strong>Customers</strong></h1>
+
+{% for item in all %}
+<strong> {{item.id}} {{item.username}} </strong><br />
+Name: {{item.first_name}} {{item.last_name}}<br />
+Email: {{item.email}}<br />
+Customer Since: {{item.registered}}
+<hr>
+{% endfor %}

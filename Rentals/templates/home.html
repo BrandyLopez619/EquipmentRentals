@@ -1,0 +1,10 @@
+<h1>EQRT</h1>
+<h3>equipment rentals made easy!</h3>
+
+{% for item in all %}
+<strong> {{item.username}} </strong><br />
+Name: {{item.first_name}} {{item.last_name}}<br />
+Email: {{item.email}}<br />
+Customer since: {{item.registered}}
+<hr>
+{% endfor %}

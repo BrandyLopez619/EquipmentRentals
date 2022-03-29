@@ -1,0 +1,11 @@
+<h1>Orders</h1>
+
+{% for item in all %}
+<strong>Order:{{item.id}} Equipment: {{item.equipment}} Delivery Location: {{item.delivery_location}}</strong><br />
+Delivery: {{item.delivery_date}} <br />
+Return: {{item.return_date}} <br />
+Equipment Location: {{item.current_location}}<br />
+Customer :{{item.customer}}<br />
+Delivery Notes:{{item.notes}}<br />
+<hr>
+{% endfor %}

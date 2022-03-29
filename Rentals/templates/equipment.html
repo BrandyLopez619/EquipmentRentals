@@ -1,0 +1,9 @@
+<h1>Equipment</h1>
+
+{% for item in all %}
+<strong>{{item.id}} {{item.year}} {{item.brand_name}} {{item.model_name}}</strong><br />
+Serial: {{item.serial_number}}<br />
+Current Location: {{item.current_location}}<br />
+Daily Rate: {{item.daily_rate}}<br />
+<hr>
+{% endfor %}

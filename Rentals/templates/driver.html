@@ -1,0 +1,9 @@
+<h1>Drivers</h1>
+
+{% for item in all %}
+<strong> {{item.id}} {{item.user_name}} </strong><br />
+Name: {{item.first_name}} {{item.last_name}}<br />
+Email: {{item.email}}<br />
+Driver Since: {{item.registered}}
+<hr>
+{% endfor %}

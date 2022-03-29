@@ -1,0 +1,12 @@
+<h1>Contracts</h1>
+
+{% for item in all %}
+<strong>Contract Number: {{item.id}} Order: {{item.order.id}}</strong><br />
+Location: {{item.delivery_location}}<br />
+Delivery: {{item.delivery_date}}<br />
+Return Date: {{item.return_date}}<br />
+Customer: {{item.customer}}<br />
+Equipment: {{item.equipment}}<br />
+Driver: {{item.equipment}}<br />
+<hr>
+{% endfor %}
